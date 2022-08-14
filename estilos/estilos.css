@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 30px auto 40px;
+}
+
+.header {
+    
+    background-color: #a71616;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: -3px 7px 9px rgba(150, 150, 150, 1);
+}
+
+.header__botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones--decoracion {
+    text-decoration: none;
+    color: white;
+    text-shadow: -3px 7px 9px rgba(150, 150, 150, 1);
+}
+
+.botones--decoracion:hover {
+    color: #a71616;
+}
+
+.main {
+    background-color: #BFA5A3;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 50px;
+    grid-template-areas:"logo logo"
+                        "combos aceites"
+                        "textiles hornillos"
+                        "sahumos sahumerios"
+                        "informacion informacion" ;
+}
+
+
+.main__categorias {
+    border: solid #a7161683;
+    margin: 3px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main__categoria--decoration {
+    text-decoration: none;
+    background-color: #49141485;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    text-shadow: -3px 7px 9px rgba(150, 150, 150, 1);
+}
+
+.main__categoria--decoration:hover {
+    color: #491414;
+    font-size: 20px;
+
+}
+
+.ofertas {
+    display: none;
+    grid-area: ofertas;
+}
+
+.post-instagram{
+    display: none;
+    grid-area: post;
+}
+
+
+.main__informacion {
+
+    text-align: center;
+    color: white;
+    grid-area: informacion;
+}
+
+.main__logo {
+    background-image: url("../img/Luz\ de\ luna.gif");
+    background-size: cover;
+    background-position: center;
+    grid-area: logo;
+}
+
+.main__categorias--combos {
+    background-image: url("../img/combo\ hornito.ico");
+    background-position: center;
+    background-size: cover;
+    grid-area: combos;
+
+}
+
+.main__categorias--sahumar {
+    background-image: url("../img/combo-sahumar.ico");
+    background-position: center;
+    background-size: cover;
+    grid-area: sahumos;
+}
+
+.main__categorias--textiles {
+    background-image: url("../img/saphirus-3spray.ico");
+    background-position: center;
+    background-size: cover;
+    grid-area: textiles;
+}
+
+.main__categorias--aceites {
+    background-image: url("../img/aceite-por4.ico");
+    background-position: center;
+    background-size: cover;
+    grid-area: aceites;
+}
+
+.main__categorias--sahumerios {
+    background-image: url("../img/sagrada-madre-por3.ico");
+    background-position: center;
+    background-size: cover;
+    grid-area: sahumerios;
+}
+
+.main__categorias--hornillos {
+    background-image: url("../img/hornito.ico");
+    background-position: center;
+    background-size: cover;
+    grid-area: hornillos;
+}
+
+.footer {
+    background-image: linear-gradient(180deg, #bfa5a3 25%, #a71616 50%);
+    display: flex;
+    align-items: flex-end;
+    font-size: 25px;
+}
+
+.fa-brands {
+    text-decoration: none;
+    color: rgba(50, 166, 238, 0.849);
+    margin-left: 25px;
+}
+
+.fa-brands:hover {
+    color: white;
+}
+
+
+@media(min-width: 400px) {
+    .main {
+        background-color: #BFA5A3;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr 50px;
+        grid-template-areas:"ofertas logo logo "
+                            "ofertas combos aceites"
+                            "ofertas textiles hornillos"
+                            "ofertas sahumos sahumerios"
+                            "ofertas informacion informacion" ;
+        }
+
+    .ofertas{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: solid #a7161683;
+        margin: 3px;
+        text-align: center;
+        color: white;
+    }
+    .oferta__titulo{
+        margin-bottom: 5px;
+        text-shadow: -3px 7px 9px rgba(150, 150, 150, 1);
+    }
+
+}
+@media (min-width: 700px){
+    .main {
+        background-color: #BFA5A3;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 50px;
+        grid-template-areas:"ofertas logo logo post"
+                            "ofertas logo logo post"
+                            "ofertas combos aceites post"
+                            "ofertas textiles hornillos post"
+                            "ofertas sahumos sahumerios post"
+                            "ofertas informacion informacion post" ;
+        }
+        .post-instagram{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: solid #a7161683 ;
+            margin: 3px;
+            text-align: center;
+            color: white;
+        }
+        .fa-instagram{
+            font-size: 50px;
+            color: white;
+        }
+
+        .post-instagram__titulo{
+            margin: 10px;
+            text-shadow: -3px 7px 9px rgba(150, 150, 150, 1);
+
+        }
+
+        .main__logo {
+            background-image: url("../img/Luz\ de\ luna.gif");
+            background-size: 80%;
+            background-position: center;
+            grid-area: logo;
+        }
+
+        .main__categorias--combos {
+            background-image: url("../img/hornito-700.jpeg");
+            background-position: center;
+            background-size: cover;
+            grid-area: combos;
+        
+        }
+        
+        .main__categorias--sahumar {
+            background-image: url("../img/sahumos-700.jpeg");
+            background-position: center;
+            background-size: cover;
+            grid-area: sahumos;
+        }
+        
+        .main__categorias--textiles {
+            background-image: url("../img/textiles-700.jpeg");
+            background-position: center;
+            background-size: cover;
+            grid-area: textiles;
+        }
+        
+        .main__categorias--aceites {
+            background-image: url("../img/aceite-700.jpeg");
+            background-position: center;
+            background-size: cover;
+            grid-area: aceites;
+        }
+        
+        .main__categorias--sahumerios {
+            background-image: url("../img/sahumerios-700.jpeg");
+            background-position: center;
+            background-size: cover;
+            grid-area: sahumerios;
+        }
+        
+        .main__categorias--hornillos {
+            background-image: url("../img/hornito.ico");
+            background-position: center;
+            background-size: cover;
+            grid-area: hornillos;
+        }
+
+        .main__informacion{
+            font-size: 20px;
+            text-shadow: -3px 7px 9px rgba(150, 150, 150, 1);
+        }
+}
+
+/* Css de Ayuda */
+.main-flex{
+    background-color: #BFA5A3;
+    height: 100vh;
+}
+.logo{
+    background-image: url("../img/Luz\ de\ luna-baner.png");
+    background-position:center ;
+    background-size: 80%;
+    border: #a716168c solid;
+    width: 100%;
+    height: 25%;
+}
+.consultas__titulo{
+    display: none;
+}
+.consultas__frecuentes{
+    margin: 2px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+.consultas--decoracion{
+    text-decoration: none;
+}
+.consultas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (min-width: 400px) {
+
+    .consultas__titulo{
+        display: flex;
+        margin: 10px;
+        font-family: 'Oswald', sans-serif;
+        color: rgba(255, 0, 0, 0.781);
+        text-shadow: -3px 7px 9px rgba(150, 150, 150, 1);
+    }
+    .consultas__frecuentes{
+        margin: 2px;
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: 'Oswald', sans-serif;
+        width: 350px;
+    }
+}
+
+/* Css de Contacto */
+.consultas__formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+.consultas__info{
+    list-style: none;
+}
+
