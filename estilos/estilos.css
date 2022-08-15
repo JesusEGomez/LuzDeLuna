@@ -22,16 +22,21 @@
 .header__botones {
     display: flex;
     justify-content: space-around;
+    
 }
 
 .botones--decoracion {
     text-decoration: none;
     color: white;
     text-shadow: -3px 7px 9px rgba(150, 150, 150, 1);
+    
 }
 
 .botones--decoracion:hover {
-    color: #a71616;
+    color: #e26060;
+    transform: scale(2);
+    transition: 0.5s;
+    
 }
 
 .main {
@@ -70,6 +75,7 @@
 .main__categoria--decoration:hover {
     color: #491414;
     font-size: 20px;
+    
 
 }
 
