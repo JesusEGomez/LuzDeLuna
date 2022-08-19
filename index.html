@@ -8,80 +8,167 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/estilos.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/estilos-b.css" />
     <title>LuzDeLuna</title>
   </head>
   <body>
-    <section class="grid">
-      <header class="header" >
-          <div class="header__botones">
-            <a class="botones botones--decoracion" href="#">Home</a>
-            <a class="botones botones--decoracion" href="#">Productos</a>
-            <a class="botones botones--decoracion" href="#">Nosotros</a>
-            <a class="botones botones--decoracion" href="./pages/contacto.html">Contacto</a>
-            <a class="botones botones--decoracion" href="./pages/ayuda.html">Ayuda</a>
+      <header>
+        <!-- Inicio de compononte -->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand " href="javascript:void(0)"><img src="img/Luz de luna-logo.png" alt="logo" class="rounded-circle logo " ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Buscar">
+                <button class="btn btn-nav" type="button">Buscar</button>
+              </form>
+            </div>
           </div>
+        </nav>
+        <!-- Fin de compononte -->
+
       </header>
-      <main class="main">
-          <div class="main__logo" ></div>
-
-          <div class="main__categorias main__categorias--combos"><a class="main__categoria--decoration" href="#">Combos</a></div>
-
-          <div class="main__categorias main__categorias--sahumar"><a class="main__categoria--decoration" href="#">Sahumos</a></div>
-
-          <div class="main__categorias main__categorias--textiles"><a class="main__categoria--decoration" href="#">Textiles</a></div>
-
-          <div class="main__categorias main__categorias--hornillos"><a class="main__categoria--decoration" href="#">Hornillos</a></div>
-
-          <div class="main__categorias main__categorias--sahumerios"><a href="#"><a class="main__categoria--decoration" href="#">Sahumerios</a></div>
-
-          <div class="main__categorias main__categorias--aceites"><a href="#"><a class="main__categoria--decoration" href="#">Aceites</a></div>
-
-          <div class="main__informacion"><p>Contamos con una gran variedad de productos
-            ¡Consulté para recibir asesoramiento!</p></div>
-            </div>
-
-            <div class="post-instagram">
-              <i class="fa-brands fa-instagram"></i> <h2 class="post-instagram__titulo"> luz_de_luna_sf_</h2>
-              <div class="post-instagram post-instagram__posteo">
-                <img src="./img/post-1.jpg" alt="posteo" width="150px" height="150px">
-              </div>
-
-              <div class="post-instagram post-instagram__posteo">
-                <img src="./img/post-2.jpg" alt="posteo" width="150px" height="150px">
-              </div>
-
-              <div class="post-instagram post-instagram__posteo">
-                <img src="./img/post-3.jpg" alt="posteo" width="150px" height="150px">
-              </div>
-
-              <div class="post-instagram post-instagram__posteo">
-                <img src="./img/post_4.jpg" alt="posteo" width="150px" height="150px">
-              </div>
-
-            </div>
-
-            <div class="ofertas">
-              <h2 class="oferta__titulo">Ofertas</h2>
-              <div class="ofertas ofertas__productos">
-                <img src="./img/sahumerios-iluminarte-por4.png" alt="sahumerios" width="150px"  height="150px">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, illum?</p>
-              </div>
-              <div class="ofertas ofertas__productos">
-                <img src="./img/oferta-1.png" alt="sahumerios" width="150px"  height="150px">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, illum?</p>
-              </div>
-              <div class="ofertas ofertas__productos">
-                <img src="./img/oferta-2.png" alt="sahumerios" width="150px"  height="150px">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, illum?</p>
+      <main class="container-fluid main">
+        <div class="row">
+          <div class="col-12 col-sm-6 ">
+            <!-- Inicio componente -->
+            <div class="card mb-3 mt-1" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/Combos.jpeg" class="img-fluid rounded-start textil" alt="textiles">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Combos</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, natus.</p>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- Fin componente -->
+          </div>
+
+          <div class="col-12 col-sm-6">
+            <!-- Inicio componente -->
+            <div class="card mb-3 mt-1" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/sahumos-700.jpeg" class="img-fluid rounded-start textil" alt="textiles">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Sahumos</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, natus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin componente -->
+          </div>
+
+          <div class="col-12 col-sm-6">
+            <!-- Inicio componente -->
+            <div class="card mb-3 mt-1" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/sahumerios-700.jpeg" class="img-fluid rounded-start textil" alt="textiles">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Sahumerios</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, natus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin componente -->
+          </div>
+
+          <div class="col-12 col-sm-6  ">
+            <!-- Inicio componente -->
+            <div class="card mb-3 mt-1" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img//hornito-700.jpeg" class="img-fluid rounded-start textil" alt="textiles">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Hornillos</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, natus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin componente -->
+          </div>
+
+          <div class="col-12 col-sm-6 ">
+            <!-- Inicio componente -->
+            <div class="card mb-3 mt-1" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/textiles-700.jpeg" class="img-fluid rounded-start textil" alt="textiles">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Textiles</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, natus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin componente -->
+          </div>
+
+          <div class="col-12 col-sm-6 ">
+            <!-- Inicio componente -->
+            <div class="card mb-3 mt-1" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/aceite-700.jpeg" class="img-fluid rounded-start textil" alt="textiles">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Aceites</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, natus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin componente -->
+          </div>
+
+        </div>
+      
           
       </main>
       <footer class="footer">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          
       </footer>
-    
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
   </body>
 </html>
