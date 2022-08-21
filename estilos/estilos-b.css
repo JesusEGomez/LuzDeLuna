@@ -79,7 +79,7 @@
 
 .footer{
     background-image: linear-gradient(to top, #272829, #575758, #8b8b8c, #c4c4c4, #ffffff);
-    height: 100px;
+    height: 70px;
 
 }
 .social{
@@ -97,5 +97,16 @@ color: #a71616e0;
 .fa-brands:hover{
     font-size: 50px;
 }
+
+/*Estilos de Productos */
+
+.card--centrado{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
 
 
