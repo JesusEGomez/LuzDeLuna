@@ -79,7 +79,7 @@
 
 .footer{
     background-image: linear-gradient(to top, #272829, #575758, #8b8b8c, #c4c4c4, #ffffff);
-    height: 70px;
+    height: 80px;
 
 }
 .social{
@@ -107,6 +107,63 @@ color: #a71616e0;
     margin-top: 5px;
 }
 
+/*Estilos de nosotros */
+.main--nosotros{
+height: 100vh;
+background-image:url("../img/fondo-nosotros.jpg");
+background-position: center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.nosotros{
+    background-color: #2728297e;
+    height: 405px;
+    width: 500px;
+    border-radius: 30px;
+    text-align: center;
+    overflow: auto;
+}
+
+.nosotros__titulo{
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 0.91);
+    margin-top: 20px;
+}
+
+.nosotros__parrafo{
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 0.91);
+    font-size: 17px;
+}
+
+/*Estilos de Contacto */
+
+.Contacto{
+    background-color: #2728297e;
+    height: 380px;
+    width: 500px;
+    border-radius: 30px;
+    text-align: center;
+    overflow: auto;
+    color: rgba(255, 255, 255, 0.91);
+}
+
+.btn--color{
+    background-color: #a71616;
+    color: white;
+}
+
+.btn--color:hover{
+    background-color: #a7161685;
+}
+
+.btn--color:focus{
+    background-color: #a71616be;
+}
 
 
 
