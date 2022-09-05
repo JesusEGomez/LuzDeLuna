@@ -17,19 +17,18 @@
   text-align: center;
   text-shadow: -3px 7px 9px rgb(150, 150, 150);
 }
-
-.header__botones {
+.header div {
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  flex-direction: row;
 }
-
-.botones--decoracion {
+.header div .botones--decoracion {
   text-decoration: none;
   color: white;
   text-shadow: -3px 7px 9px rgb(150, 150, 150);
 }
-
-.botones--decoracion:hover {
+.header div .botones--decoracion:hover {
   color: #e26060;
   transform: scale(2);
   transition: 0.5s;
@@ -39,6 +38,8 @@
   background-image: linear-gradient(180deg, #bfa5a3 25%, #a71616 50%);
   display: flex;
   align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
   font-size: 25px;
 }
 
@@ -86,9 +87,9 @@
 
 .consultas {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 @media (min-width: 400px) {

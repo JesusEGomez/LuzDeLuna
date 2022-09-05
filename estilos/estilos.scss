@@ -9,10 +9,18 @@ $font1:'Oswald', sans-serif;
     box-sizing: border-box;
 }
 
+@mixin flex ($aling:center, $justify:center, $direction:row ) {
+    display: flex;
+    align-items: $aling;
+    justify-content: $justify;
+    flex-direction:$direction ;
+}
+
 .grid {
     display: grid;
     height: 100vh;
     grid-template-rows: 30px auto 40px;
+    
 }
 
 .header {
@@ -22,33 +30,29 @@ $font1:'Oswald', sans-serif;
     color: $color2;
     text-align: center;
     text-shadow: $shadow;
+    div{
+        @include flex (center, space-around);
+        
+        .botones--decoracion {
+            text-decoration: none;
+            color:$color2;
+            text-shadow: $shadow;
+            &:hover{
+                color: #e26060;
+                transform: scale(2);
+                transition: 0.5s;
+            }
+            
+        }
+    }
 }
 
 
-.header__botones {
-    display: flex;
-    justify-content: space-around;
-    
-}
 
-.botones--decoracion {
-    text-decoration: none;
-    color:$color2;
-    text-shadow: $shadow;
-    
-}
-
-.botones--decoracion:hover {
-    color: #e26060;
-    transform: scale(2);
-    transition: 0.5s;
-    
-}
 
 .footer {
     background-image: linear-gradient(180deg, #bfa5a3 25%, #a71616 50%);
-    display: flex;
-    align-items: flex-end;
+    @include flex(flex-end ,center );
     font-size: 25px;
 }
 
@@ -90,10 +94,7 @@ $font1:'Oswald', sans-serif;
     text-decoration: none;
 }
 .consultas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center , column );
 
 }
 
