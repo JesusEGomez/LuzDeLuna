@@ -218,4 +218,10 @@ align-items: center;
     color: rgba(255, 255, 255, 0.91);
 }
 
+@media (max-width: 610px){
+    .consultas{
+        height: 100vh;
+        overflow: auto;
+        }
+}
 
