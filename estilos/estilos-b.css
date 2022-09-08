@@ -187,7 +187,6 @@ align-items: center;
 
 .consultas{
    height: 100vh;
-   /* overflow: auto; */
 }
 .consultas__titulo{
     margin: 50px;
